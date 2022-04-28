@@ -1,10 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import Table from './components/Table';
+import Clock from './components/Clock';
+
+let data = [
+  {
+    'id':'1',
+    'name':'sabbir Ahmed',
+    'phone':'01722373161'
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +27,12 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <div>
+        <Table data={data}/>
+        <hr/>
+        <Clock/>
+      </div>
     </div>
   );
 }
