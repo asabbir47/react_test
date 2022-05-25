@@ -1,5 +1,7 @@
 import Row from './Row'
 
+
+
 function Table(props) {
     return (
         <table className='table'>
@@ -13,7 +15,7 @@ function Table(props) {
             <tbody>
                 {props.data.map((e, i) => {
                     return (
-                        <Row data={e} key={e.id} />
+                        <Row data={e} key={e.id}/>
                     );
                 })}
             </tbody>
